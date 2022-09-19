@@ -36,11 +36,11 @@ class MainActivity : AppCompatActivity() {
 
 
 
-                var dob=Calendar.getInstance()
-                dob.set(year,month,day)
+                var date=Calendar.getInstance()
+                date.set(year,month,day)
 
-                var age= myCalendar.get(Calendar.YEAR) - dob.get(Calendar.YEAR)
-                if (myCalendar.get(Calendar.DAY_OF_YEAR) < dob.get(Calendar.DAY_OF_YEAR))
+                var age= myCalendar.get(Calendar.YEAR) - date.get(Calendar.YEAR)
+                if (myCalendar.get(Calendar.DAY_OF_YEAR) < date.get(Calendar.DAY_OF_YEAR))
                 {
                     age--
                 }
